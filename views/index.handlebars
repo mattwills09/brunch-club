@@ -1,0 +1,74 @@
+<div id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-8 offset-2">
+        <h1>{{msg}}</h1>
+        <h2>This is our Home Page!</h2>
+
+        <form class="clearfix mb-4">
+          <div class="form-group">
+            <label for="event-text">Event Text</label>
+            <input type="text" id="event-venue" class="form-control" aria-describedby="event-text" placeholder="Enter Event Text">
+          </div>
+
+          <div class="form-group">
+            <label for="event-description">Event Description</label>
+            <textarea class="form-control" id="event-theme" aria-describedby="event-description" placeholder="Enter Event Description"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="event-text">Event Text</label>
+            <input type="text" id="event-date-time" class="form-control" aria-describedby="event-text" placeholder="Enter Event Text">
+          </div>
+
+          <div class="form-group">
+            <label for="event-text">Event Text</label>
+            <input type="text" id="event-specials" class="form-control" aria-describedby="event-text" placeholder="Enter Event Text">
+          </div>
+
+          <div class="form-group">
+            <label for="event-text">Event Text</label>
+            <input type="text" id="event-address" class="form-control" aria-describedby="event-text" placeholder="Enter Event Text">
+          </div>
+
+          <div class="form-group">
+            <label for="event-text">Event Text</label>
+            <input type="text" id="event-neighborhood" class="form-control" aria-describedby="event-text" placeholder="Enter Event Text">
+          </div>
+
+          <div class="form-group">
+            <label for="event-text">Event Text</label>
+            <input type="text" id="event-food-type" class="form-control" aria-describedby="event-text" placeholder="Enter Event Text">
+          </div>
+
+          {{!-- <button id="submit" class="btn btn-primary float-right">Submit</button> --}}
+
+        </form>
+
+        <h3>Events:</h3>
+
+        <ul id="event-list" class="list-group">
+          {{#each Event}}
+            {{#if this.id}}
+
+              <li data-id="{{id}}" class="list-group-item">
+
+                <p>Venue: <a href="event/{{id}}"> {{venue}} </a></p>
+                <p>Theme: {{theme}}</p>
+
+            <button class="btn btn-danger float-right delete">ｘ</button>
+
+              </li>
+
+            {{/if}}
+          {{/each}}
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+

@@ -1,0 +1,62 @@
+<div id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-8 offset-2">
+          <br>
+        <p><h2>Add New Event Below!</h2></p>
+
+        <form class="clearfix mb-4">
+          <div class="form-group">
+            <label for="event-text">Event Restaurant/Venue: </label>
+            <input type="text" id="event-venue" class="form-control" aria-describedby="event-text" placeholder="Enter Restaurant/Venue">
+          </div>
+
+          <div class="form-group">
+            <label for="event-text">Theme: </label>
+            <textarea class="form-control" id="event-theme" aria-describedby="event-description" placeholder="Event Theme"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="event-datetime">Event Date and Time: </label>
+            {{!-- <div class="col-10"> --}}
+              <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="event-date-time">
+            {{!-- </div> --}}
+          </div>
+
+
+            {{!-- <input type="text" id="event-date-time" class="form-control" aria-describedby="event-text" placeholder="Event Date/Time"> --}}
+
+          <div class="form-group">
+            <label for="event-text">Food/Drink Specials: </label>
+            <input type="text" id="event-specials" class="form-control" aria-describedby="event-text" placeholder="Event Specials">
+          </div>
+
+          <div class="form-group">
+            <label for="event-text">Address: </label>
+            <input type="text" id="event-address" class="form-control" aria-describedby="event-text" placeholder="Event Address">
+          </div>
+
+          <div class="form-group">
+            <label for="event-text">Neighborhood: </label>
+            <input type="text" id="event-neighborhood" class="form-control" aria-describedby="event-text" placeholder="Event Neighborhood">
+          </div>
+
+          <div class="form-group">
+            <label for="event-text">Food Type: </label>
+            <input type="text" id="event-food-type" class="form-control" aria-describedby="event-text" placeholder="Restaurant/Venue Food Type">
+          </div>
+
+          <button id="addNewEvent" class="btn btn-primary float-right">Add Event</button>
+          <br>
+          <div id="backToEvents"><a href="/events">← Back To All Events</a></a></div>
+
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="/js/index.js"></script>

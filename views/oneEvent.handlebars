@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8 offset-2">
+      <div class="card mt-4">
+        <div class="card-body">
+          <h5 class="card-title">Brunch Event Details:</h5>
+          <hr>
+
+          {{!-- {{#each Event}} --}}
+            {{!-- {{#if this.id}} --}}
+
+              <p><strong>Restaurant/Venue: </strong>{{Event.venue}}</p>
+              <p><strong>Theme: </strong>{{Event.theme}}</p>
+              <p><strong>Date & Time: </strong>{{Event.date_time}}</p>
+              <p><strong>Specials: </strong>{{Event.specials}}</p>
+              <p><strong>Address: </strong>{{Event.address}}</p>
+              <p><strong>Neighborhood: </strong>{{Event.neighborhood}}</p>
+              <p><strong>Food Type: </strong>{{Event.food_type}}
+              
+              <button class="btn btn-danger float-right delete" data-id={{Event.id}}>ｘ</button></p>
+
+              <br>
+              <hr>
+              <br>
+
+            {{!-- {{/if}} --}}
+          {{!-- {{/each}} --}}
+
+          <a href="/events">← Back To Events Page</a>
+
+          {{!-- <a href="/newevent" class="add-link"> Add Event </a> --}}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="/js/oneEvent.js"></script>

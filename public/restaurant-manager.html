@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>add venue</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="/blog"><i class="fas fa-utensils"></i> brunch.club </i></a>
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navb">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+								<i class="fas fa-star-half-alt"></i> Reviews
+						</a>
+						<div class="dropdown-menu">
+								<a class="dropdown-item" href="/blog">see reviews</a>
+							<a class="dropdown-item" href="/restaurants">add venue</a>
+							<a class="dropdown-item" href="/cms">add review</a>
+						</div>
+				</li>
+				<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+								<i class="fas fa-calendar-alt"></i> Events
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="/events">see events</a>
+							<a class="dropdown-item" href="/newevent">add event</a>
+						</div>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<a href="/logout"><button class="btn-danger my-2 my-sm-0" type="button">logout</button></a>
+			</form>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="container blog">
+					<br>
+					<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<h6>Logged in as: <span class="member-name"></span>...</h6>
+						</div>
+					</div>
+			</div><hr>
+		<!-- <div class="row mt-4">
+      <div class="col-md-2 col-sm-2">
+        <a class="btn btn-light" href="/blog">Go to Reviews</a>
+      </div>
+			<div class="col-md-2 col-sm-2">
+        <a class="btn btn-light" href="/cms">New Review</a>
+      </div>
+    </div> -->
+		<div class="row">
+			<div class="col-md-10 offset-md-1">
+				<div class="restaurant-container">
+					<h1>Venue Manager </h1>
+					<table class="table table-striped">
+						<thead align="center">
+							<tr>
+								<th><u>Venue Name</u></th>
+								<th><u>Review Count</u></th>
+								<th><u>See Reviews</u></th>
+								<th><u>New Review</u></th>
+								<th><u>Remove Venue</u></th>
+							</tr>
+						</thead>
+						<tbody align="center">
+							<tr id="form-row">
+								<form id="restaurant-form">
+									<td colspan="4"><input placeholder="Restaurant Name" id="restaurant-name" type="text" /></td>
+									<td><button type="submit" class="btn btn-success" id="restBtn">add venue</button></td>
+								</form>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		</d>
+		<!-- Custom Script -->
+		<script src="js/restaurant.js" type="text/javascript"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script type="text/javascript" src="js/members.js"></script>
+
+</body>
+
+</html>

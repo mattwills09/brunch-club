@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8 offset-2">
+      <div class="card mt-4">
+        <div class="card-body">
+          
+          
+
+          <h3 style="padding-bottom:10px;">Upcoming Events:</h3>
+
+        <ul id="event-list" class="list-group">
+
+          {{#each Event limit="3"}}
+            {{!-- {{#if this.id}} --}}
+
+              <li data-id="{{id}}" class="list-group-item">
+
+                <ul><a href="events/{{id}}"> {{venue}} </a></ul>
+                <ul>Theme: {{theme}}</ul>
+
+            <button class="btn btn-danger float-right delete" data-id={{id}}>ｘ</button>
+
+              </li>   
+
+            {{!-- {{/if}} --}}
+
+          {{/each}}
+
+        </ul><br><br>
+          <h3 class="card-title">Quickview Details</h3><hr>
+          <h5 class="add-link"><a href="/newevent">+ Add New Event</a></h5>
+          
+        
+          {{#each Event}}
+          <p>
+          <p><strong>Restaurant/Venue: <a href="events/{{id}}"> {{venue}} </a></strong></p>
+          <p><strong>Theme: </strong>{{theme}}</p>
+          
+          <p><strong>Date/Time: </strong>{{date_time}}</p>
+          <hr>
+            {{!-- <strong>Date and Time</strong>: {{date_time}}</p>
+            <p> --}}
+            {{!-- <strong>Address</strong>: {{address}}</p>
+            <p>
+            <strong>Neighborhood</strong>: {{neighborhood}}</p>
+            <p>
+            <strong>Food Type</strong>: {{food_type}}</p> --}}
+          {{/each}}
+            <h6><a href="/events">← Back to Top</a></h6>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/js/index.js"></script>
