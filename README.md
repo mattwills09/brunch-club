@@ -52,7 +52,7 @@ In the end, this app was very enjoyable to create, and in the future, is a site 
 * [Node JS]
 * [Express]
 * [Express Handlebars](https://www.npmjs.com/package/express-handlebars) - Handlebars View Engine
-* [Express Session](https://www.npmjs.com/package/express-session) - Log In/Sign Up
+* [Express Session](https://www.npmjs.com/package/express-session) - Log In/Sign Up, simple session middleware for Express
 * [MySQL]
 * [Sequelize](https://www.npmjs.com/package/sequelize) - Sequelize is a promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server
 * [Heroku](https://salty-tor-68629.herokuapp.com/events) - Hosted Project Site
