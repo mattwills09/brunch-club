@@ -1,9 +1,9 @@
 # BRUNCH CLUB! Group Project
 ___
 
-For this project, we worked with a small group to create a functioning application that would use NodeJS and an Express Web Server, backed by a MySQL and Sequelize created database, using GET and POST routes to retreive and create data, actively deployed on heroku, and utilizing a technology that we haven't gone over yet in our program.  This addition was utilizing the Passport framework add on for user authentication and login information.  We also had to use a MVC paradigm for our folder structure and have a polished front end user interface.
+For this group project, we worked in a small group to create a fully functioning application that would use NodeJS server capabilities and an Express Web Server, backed by a Sequelize and a MySQL database, using GET and POST routes to retreive and create data, actively deployed on heroku, and utilizing a technology that we have not used/learned in the program so far, which we chose the add-on Passport software for user authorization and password encryption.  This addition enabled us to add a log in/sign up entrance page to the application, and also would store all user information to the database as well.  The last requirements of the application was a polished front end user interface, and the use of the MVC ("Model-View-Controller") layout paradigm for our folder structure.
 
-Starting with the base code provided, we updated the configuration file to match our local server information, and also created .gitignore and .env files for added security, and the JawsDB heroku add-on for user information as well.  The same data from JawsDB was used to connect to a MySQL database so that information added on the site was also stored and updated in the database.
+Starting with the base code, we updated the configuration file to match and connect to our local server information, created a .gitignore and .env files for added security, and the JawsDB heroku add-on for user information as well.  The same data from JawsDB was used to connect to a MySQL database so that information added on the site was also stored and updated in the database.
 
 ![brunch-club-mysql-users](public/stylesheets/brunch-club-mysql-users.jpg)
 ___
